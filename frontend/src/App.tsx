@@ -1,14 +1,16 @@
 import HeaderBar from "./components/HeaderBar";
+import PokeAssistantMainSection from "./components/PokeAssistantMainSection/PokeAssistantMainSection";
+import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
   return (
-    <>
-      <div className="fixed inset-0 bg-indigo-500/25"></div>
+    <ChakraProvider>
+      <div className="fixed inset-0 bg-indigo-300/10"></div>
       <div className="bg-pokemon-theme bg-cover w-full h-full flex flex-col">
         <HeaderBar />
-        <div className="relative grow bg-black/50 rounded-[20px]"></div>
+        <PokeAssistantMainSection />
       </div>
-    </>
+    </ChakraProvider>
   );
 }
 

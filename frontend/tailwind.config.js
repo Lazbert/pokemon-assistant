@@ -4,7 +4,18 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "pokemon-theme": "url('./src/assets/pokemon-bg.jpg')",
+        "pokemon-theme": "url('./src/assets/pokemon-bg.png')",
+      },
+    },
+    animation: {
+      "moving-mascot": "moving-mascot 20s linear infinite",
+    },
+    keyframes: {
+      "moving-mascot": {
+        "0%": { transform: "translateX(0) rotateY(180deg)" },
+        "50%": { transform: "translateX(1300%) rotateY(179deg)" },
+        "51%": { transform: "translateX(1300%) rotateY(0deg)" },
+        "100%": { transform: "translateX(0)" },
       },
     },
   },
