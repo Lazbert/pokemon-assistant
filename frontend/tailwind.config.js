@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "pokemon-theme": "url('./src/assets/pokemon-bg.jpg')",
+      },
+    },
   },
   plugins: [],
 };
