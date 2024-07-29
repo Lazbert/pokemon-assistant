@@ -13,7 +13,7 @@ const PokemonInput: React.FC<PokemonInputProps> = ({
   placeholder,
 }) => {
   return (
-    <div className="w-[80%] flex items-center gap-2">
+    <div className="flex items-center gap-2">
       <InputGroup>
         <InputLeftElement>
           <img src={Pokeball} className="w-[25px] h-[25px]" />

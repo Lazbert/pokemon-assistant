@@ -8,13 +8,13 @@ export default {
       },
     },
     animation: {
-      "moving-mascot": "moving-mascot 20s linear infinite",
+      "moving-mascot": "moving-mascot 17s linear infinite",
     },
     keyframes: {
       "moving-mascot": {
         "0%": { transform: "translateX(0) rotateY(180deg)" },
-        "50%": { transform: "translateX(1300%) rotateY(179deg)" },
-        "51%": { transform: "translateX(1300%) rotateY(0deg)" },
+        "50%": { transform: "translateX(1700%) rotateY(179deg)" },
+        "51%": { transform: "translateX(1700%) rotateY(0deg)" },
         "100%": { transform: "translateX(0)" },
       },
     },
